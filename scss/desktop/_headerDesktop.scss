@@ -1,0 +1,125 @@
+@media (min-width: 992px) {
+  header {
+    .hero {
+      flex-direction: row;
+      width: 1132px;
+      justify-content: space-between;
+      margin: 0 auto;
+      img {
+        width: 544px;
+        height: 557px;
+      }
+      .hero-text {
+        width: 460px;
+        height: 348px;
+        align-items: start;
+        h2 {
+          @include textStyle(900, 44px, 53px);
+          width: 100%;
+          text-align: left;
+          padding-bottom: 15px;
+        }
+        & > p {
+          @include textStyle(400, 18px, 25px);
+          width: 100%;
+          text-align: left;
+        }
+        form {
+          width: 447px;
+          margin-bottom: 0;
+          button {
+            width: 211px;
+            height: 49px;
+            display: flex;
+            align-items: center;
+            color: white;
+            padding-left: 30px;
+            padding-right: 30px;
+          }
+          p {
+            @include textStyle(400, 16px, 19px);
+            padding-left: 10px;
+          }
+        }
+        .example {
+          margin-top: 25px;
+          height: 27px;
+          margin-left: 10px;
+          display: flex;
+          margin-bottom: 0;
+          align-items: center;
+          width: 335px;
+          justify-content: space-between;
+          p {
+            padding-bottom: 0;
+          }
+          ul {
+            width: 259px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  header {
+    menu {
+      width: 1145px;
+      height: 49px;
+      margin: 0 auto 75px;
+      a {
+        width: 131px;
+        height: 30px;
+        text-decoration: none;
+        color: #111238;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      nav {
+        label {
+          display: none;
+        }
+        .menu {
+          display: flex;
+          width: 752px;
+          justify-content: space-between;
+          ul {
+            display: flex;
+            align-items: center;
+            width: 250px;
+            justify-content: space-between;
+            @include textStyle(400, 16px, 19px);
+            li:hover {
+              color: #1a75e8;
+            }
+          }
+        }
+        .join-block {
+          width: 241px;
+          display: flex;
+          justify-content: space-between;
+          .button1 {
+            background: none;
+            border: none;
+            outline: none;
+            color: #111238;
+            @include textStyle(400, 16px, 19px);
+          }
+          .button2 {
+            padding: 15px 30px;
+            background: #1a75e8;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            @include textStyle(400, 16px, 19px);
+          }
+        }
+      }
+    }
+  }
+}
+.fff:hover {
+  color: #1a75e8;
+}
